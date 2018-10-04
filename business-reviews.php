@@ -66,7 +66,7 @@ class EIG_Business_Reviews {
 	 */
 	public function enqueue_scripts() {
 
-		//wp_enqueue_script( $this->name );
+		wp_enqueue_script( $this->name );
 
 	}
 

@@ -35,7 +35,6 @@ class EIG_Business_Reviews_Widget extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 		add_action( 'wp_footer', array( $this, 'modal_html' ) );
-		wp_enqueue_script( 'eig-business-reviews' );
 		wp_enqueue_style( 'eig-business-reviews' );
 		echo $args['before_widget'];
 		echo $args['before_title'] . 'Write a Review' . $args['after_title'];
