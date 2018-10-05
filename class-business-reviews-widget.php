@@ -1,13 +1,9 @@
 <?php
+
 /**
  * Class EIG_Business_Reviews_Widget
  */
 class EIG_Business_Reviews_Widget extends WP_Widget {
-
-	/**
-	 * @var EIG_Business_Reviews
-	 */
-	public $module;
 
 	/**
 	 * EIG_Business_Reviews_Widget constructor.
@@ -23,8 +19,6 @@ class EIG_Business_Reviews_Widget extends WP_Widget {
 			'Write a Review',
 			$widget_options
 		);
-
-		$this->module = EIG_Business_Reviews::init();
 
 	}
 
