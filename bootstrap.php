@@ -1,5 +1,6 @@
 <?php
-add_action( 'after_setup_theme', 'eig_module_br_register' );
+add_action( 'plugins_loaded', 'eig_module_br_register' );
+
 /**
  * Register the Business Reviews module
  */
