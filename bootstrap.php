@@ -1,5 +1,8 @@
 <?php
-add_action( 'plugins_loaded', 'eig_module_br_register' );
+
+if ( function_exists( 'add_action' ) ) {
+	add_action( 'plugins_loaded', 'eig_module_br_register' );
+}
 
 /**
  * Register the Business Reviews module
@@ -13,6 +16,7 @@ function eig_module_br_register() {
 		'isHidden' => true,
 	) );
 }
+
 /**
  * Load the Business Reviews module
  */
