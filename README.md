@@ -1,10 +1,18 @@
- # Endurance Spam Prevention WordPress Module
+<a href="https://endurance.com/" target="_blank">
+    <img src="https://bluehost.com/resources/logos/endurance.svg" alt="Endurance Logo" title="Endurance" align="right" height="42" />
+</a>
+
+# Business Reviews WordPress Module
  
 Provides functionality to add Business Reviews to WP Pro accounts.
  
  ## Installation
  
  ### 1. Add the Bluehost Satis to your `composer.json`.
+ 
+ ```bash
+ composer config repositories.bluehost composer https://bluehost.github.io/satis
+ ```
  
  ### 2. Require the `bluehost/endurance-wp-module-business-reviews` package.
  
