@@ -3,11 +3,11 @@
  * This file adds support for the business reviews module
  */
 
-class EIG_Business_Reviews {
+class NFD_Business_Reviews {
 
-	public $slug = 'eigbr';
+	public $slug = 'nfdbr';
 
-	public $name = 'eig-business-reviews';
+	public $name = 'nfd-business-reviews';
 
 	public $sites_endpoint = 'https://my.bluehost.com/siteapi/sites';
 
@@ -16,18 +16,18 @@ class EIG_Business_Reviews {
 	/**
 	 * Singleton
 	 *
-	 * @return EIG_Business_Reviews
+	 * @return NFD_Business_Reviews
 	 */
 	static function init() {
 		static $instance = false;
 		if ( ! $instance ) {
-			$instance = new EIG_Business_Reviews();
+			$instance = new NFD_Business_Reviews();
 		}
 		return $instance;
 	}
 
 	/**
-	 * EIG_Business_Reviews constructor.
+	 * NFD_Business_Reviews constructor.
 	 */
 	public function __construct() {
 
@@ -91,7 +91,7 @@ class EIG_Business_Reviews {
 	 */
 	public function widget_init() {
 
-		register_widget( 'EIG_Business_Reviews_Widget' );
+		register_widget( 'NFD_Business_Reviews_Widget' );
 
 	}
 
@@ -146,7 +146,7 @@ class EIG_Business_Reviews {
 
 		// If the current user is an editor or greater, don't use any cached value
 		if ( ! current_user_can( 'edit_posts' ) ) {
-			$review_sites = get_transient( 'eig_business_reviews' );
+			$review_sites = get_transient( 'nfd_business_reviews' );
 		} else {
 			$review_sites = false;
 		}
@@ -157,7 +157,7 @@ class EIG_Business_Reviews {
 			if ( $response->status && 'disabled' !== $response->status ) {
 				$review_sites = $response->review_sites;
 				// Cache results for 1 hour
-				set_transient( 'eig_business_reviews', $review_sites, 3600 );
+				set_transient( 'nfd_business_reviews', $review_sites, 3600 );
 			}
 		}
 
@@ -228,4 +228,4 @@ class EIG_Business_Reviews {
 /**
  * Initialize Business Reviews
  */
-EIG_Business_Reviews::init();
+NFD_Business_Reviews::init();
