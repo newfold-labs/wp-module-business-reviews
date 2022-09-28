@@ -152,7 +152,7 @@ class NFD_Business_Reviews {
 		}
 
 		if ( false === $review_sites ) {
-			$request  = wp_remote_get( $this->sites_endpoint . '/' . $this->domain . '/' . mm_site_bin2hex() . '/business-reviews' );
+			$request  = wp_remote_get( $this->sites_endpoint . '/' . $this->domain . '/' . mojo_site_bin2hex() . '/business-reviews' );
 			$response = json_decode( wp_remote_retrieve_body( $request ) );
 			if ( $response->status && 'disabled' !== $response->status ) {
 				$review_sites = $response->review_sites;
