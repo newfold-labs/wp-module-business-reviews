@@ -5,10 +5,10 @@
 ?>
 
 <div style="width:50%;float:left;">
-	<a href="#" onclick="eigbr.doFeedback();"><?php echo file_get_contents( plugin_dir_path( dirname( __FILE__ ) ) . 'assets/images/thumbs-down.svg' ); ?><br />Help us improve</a>
+	<a href="#" onclick="nfdbr.doFeedback();"><?php echo file_get_contents( plugin_dir_path( dirname( __FILE__ ) ) . 'assets/images/thumbs-down.svg' ); ?><br />Help us improve</a>
 </div>
 <div style="width:50%;float:left;">
-	<a href="#" onclick="eigbr.doReview();"><?php echo file_get_contents( plugin_dir_path( dirname( __FILE__ ) ) . 'assets/images/thumbs-up.svg' ); ?><br />Share a review</a>
+	<a href="#" onclick="nfdbr.doReview();"><?php echo file_get_contents( plugin_dir_path( dirname( __FILE__ ) ) . 'assets/images/thumbs-up.svg' ); ?><br />Share a review</a>
 </div>
 <!--
 * Thumb icons from:
