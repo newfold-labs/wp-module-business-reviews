@@ -193,15 +193,15 @@ class NFD_Business_Reviews {
 		$supported_sites = array(
 			'#https?://(www)?\.facebook\.com.*#i' => array(
 				'name' => 'Facebook',
-				'logo' => plugin_dir_url( __FILE__ ) . 'assets/images/facebook.png',
+				'logo' => plugin_dir_url( __FILE__ ) . 'assets/images/facebook.svg',
 			),
 			'#https?://(www)?\.google\.com.*#i'   => array(
 				'name' => 'Google',
-				'logo' => plugin_dir_url( __FILE__ ) . 'assets/images/google.png',
+				'logo' => plugin_dir_url( __FILE__ ) . 'assets/images/google.svg',
 			),
 			'#https?://(www)?\.yelp\.com.*#i'     => array(
 				'name' => 'Yelp',
-				'logo' => plugin_dir_url( __FILE__ ) . 'assets/images/yelp.png',
+				'logo' => plugin_dir_url( __FILE__ ) . 'assets/images/yelp.svg',
 			),
 		);
 
