@@ -1,4 +1,4 @@
-.eig_business_reviews > div > a {
+.nfd_business_reviews > div > a {
 	position: relative;
 	display: block;
 	width: 90%;
@@ -7,18 +7,18 @@
 	padding: 10px 0;
 }
 
-.eig_business_reviews > div > a svg {
+.nfd_business_reviews > div > a svg {
 	max-width: 50%;
 	margin-bottom: 10px;
 	fill: currentColor
 }
 
-.eig_modal {
+.nfd_modal {
 	display: none;
 	border-radius: 5px;
 }
 
-.eig_modal_bg {
+.nfd_modal_bg {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -29,7 +29,7 @@
 	z-index: 10000;
 }
 
-.eig_modal_content {
+.nfd_modal_content {
 	position: fixed;
 	text-align: center;
 	top: 25%;
@@ -44,11 +44,11 @@
 	color: #000;
 }
 
-.eig_br_list, .eig_br_contact {
+.nfd_br_list, .nfd_br_contact {
 	padding: 25px;
 }
 
-.eig_br_close {
+.nfd_br_close {
 	position: absolute;
 	top: 8px;
 	right: 8px;
@@ -58,29 +58,29 @@
 	cursor: pointer;
 }
 
-.eig_modal_content h2 {
+.nfd_modal_content h2 {
 	margin-top: 0;
 }
 
-.eig_modal_content p {
+.nfd_modal_content p {
 	margin-bottom: 10px;
 }
 
-.eig_modal_content ul {
+.nfd_modal_content ul {
 	text-align: left;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-.eig_modal_content ul li {
+.nfd_modal_content ul li {
 	display: inline-block;
 	float: left;
 	width: 50%;
 	margin-bottom: 10px;
 }
 
-.eig_modal_content ul li a {
+.nfd_modal_content ul li a {
 	display: block;
 	width: 92%;
 	border: 1px solid #ccc;
@@ -100,37 +100,37 @@
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#efefef', GradientType=0); /* IE6-9 */
 }
 
-.eig_modal_content ul li a img {
+.nfd_modal_content ul li a img {
 	max-width: 90%;
 	max-height: 40px;
 	margin: 0 auto;
 	vertical-align: middle;
 }
 
-.eig_modal_content ul.odd li:first-child {
+.nfd_modal_content ul.odd li:first-child {
 	width: 100%;
 }
 
-.eig_modal_content ul.odd li:first-child a {
+.nfd_modal_content ul.odd li:first-child a {
 	width: 96%;
 }
 
-.eig_br_toggle_sentence {
+.nfd_br_toggle_sentence {
 	margin-top: 25px;
 	font-size: .8em;
 	clear: both;
 }
 
-.eig_br_contact {
+.nfd_br_contact {
 	text-align: left;
 }
 
-.eig_br_contact input {
+.nfd_br_contact input {
 	margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 600px) {
-	.eig_modal_content {
+	.nfd_modal_content {
 		position: absolute;
 		top: 46px;
 		width: 100%;

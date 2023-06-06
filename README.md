@@ -1,26 +1,27 @@
-<a href="https://endurance.com/" target="_blank">
-    <img src="https://bluehost.com/resources/logos/endurance.svg" alt="Endurance Logo" title="Endurance" align="right" height="42" />
+<a href="https://newfold.com/" target="_blank">
+    <img src="https://newfold.com/content/experience-fragments/newfold/site-header/master/_jcr_content/root/header/logo.coreimg.svg/1621395071423/newfold-digital.svg" alt="Newfold Logo" title="Newfold Digital" align="right" 
+height="42" />
 </a>
 
 # Business Reviews WordPress Module
-[![Version Number](https://img.shields.io/github/v/release/bluehost/endurance-wp-module-business-reviews?color=21a0ed&labelColor=333333)](https://github.com/bluehost/endurance-wp-module-business-reviews/releases)
-[![License](https://img.shields.io/github/license/bluehost/endurance-wp-module-business-reviews?labelColor=333333&color=666666)](https://raw.githubusercontent.com/bluehost/endurance-wp-module-business-reviews/master/LICENSE)
+[![Version Number](https://img.shields.io/github/v/release/newfold-labs/wp-module-business-reviews?color=21a0ed&labelColor=333333)](https://github.com/newfold-labs/wp-module-business-reviews/releases)
+[![License](https://img.shields.io/github/license/newfold-labs/wp-module-business-reviews?labelColor=333333&color=666666)](https://raw.githubusercontent.com/newfold-labs/wp-module-business-reviews/master/LICENSE)
 
  
 Provides functionality to add Business Reviews to WP Pro accounts.
  
  ## Installation
  
- ### 1. Add the Bluehost Satis to your `composer.json`.
+ ### 1. Add the Newfold Satis to your `composer.json`.
  
  ```bash
- composer config repositories.bluehost composer https://bluehost.github.io/satis
+ composer config repositories.newfold composer https://newfold-labs.github.io/satis
  ```
  
- ### 2. Require the `bluehost/endurance-wp-module-business-reviews` package.
+ ### 2. Require the `newfold-labs/wp-module-business-reviews` package.
  
  ```bash
- composer require bluehost/endurance-wp-module-business-reviews
+ composer require newfold-labs/wp-module-business-reviews
  ```
  
  ## Usage
@@ -31,8 +32,4 @@ Provides functionality to add Business Reviews to WP Pro accounts.
  
  ## More on Endurance WordPress Modules
  
-* <a href="https://github.com/bluehost/endurance-wp-module-loader#endurance-wordpress-modules">What are modules?</a>
-* <a href="https://github.com/bluehost/endurance-wp-module-loader#creating--registering-a-module">Creating/registering modules</a>
-* <a href="https://github.com/bluehost/endurance-wp-module-loader#installing-from-our-satis">Installing from our Satis</a>
-* <a href="https://github.com/bluehost/endurance-wp-module-loader#local-development">Local development notes</a>
-* <a href="https://github.com/bluehost/endurance-wp-module-loader#understanding-the-module-lifecycle">Understanding the module lifecycle</a>
+[More on NewFold WordPress Modules](https://github.com/newfold-labs/wp-module-loader)

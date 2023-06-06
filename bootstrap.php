@@ -1,25 +1,35 @@
 <?php
+/**
+ * Business Reviews module bootstrap.
+ *
+ * Provides functionality to add Business Reviews to WP Pro accounts.
+ * A new WordPress Widget becomes available for use inside the WordPress Admin.
+ * (must be enabled via bluerock)
+ *
+ * @package Newfold\WP\Module\BusinessReviews
+ */
+use NewfoldLabs\WP\ModuleLoader\Container;
+use function NewfoldLabs\WP\ModuleLoader\register;
 
 if ( function_exists( 'add_action' ) ) {
-	add_action( 'plugins_loaded', 'eig_module_br_register' );
-}
 
-/**
- * Register the Business Reviews module
- */
-function eig_module_br_register() {
-	eig_register_module( array(
-		'name'     => 'business-reviews',
-		'label'    => __( 'Business Reviews', 'endurance' ),
-		'callback' => 'eig_module_br_load',
-		'isActive' => false,
-		'isHidden' => true,
-	) );
-}
+	add_action(
+		'plugins_loaded',
+		function () {
 
-/**
- * Load the Business Reviews module
- */
-function eig_module_br_load() {
-	require dirname( __FILE__ ) . '/business-reviews.php';
+			register(
+				[
+					'name'     => 'business-reviews',
+					'label'    => __( 'Business Reviews', 'newfold-business-reviews' ),
+					'callback' => function ( Container $container ) {
+						require __DIR__ . '/business-reviews.php';
+					},
+					'isActive' => false,
+					'isHidden' => true,
+				]
+			);
+
+		}
+	);
+
 }
